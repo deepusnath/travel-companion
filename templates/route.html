@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="{{ url_for('static', filename='images/Banner.jpeg') }}" alt="Banner" class="banner">
+            <img src="{{ url_for('static', filename='images/Logo.jpeg') }}" alt="Logo" class="logo">
+        </header>
+        <main class="main">
+            <h1>Route from {{ start }} to {{ destination }} via {{ service }}</h1>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Address</th>
+                    <th>Google Map Link</th>
+                    <th>Deviation Time (mins)</th>
+                    <th>Deviation Distance (km)</th>
+                </tr>
+                {% for entry in services %}
+                <tr>
+                    <td>{{ entry.service.name }}</td>
+                    <td>{{ entry.service.address }}</td>
+                    <td><a href="{{ entry.service.google_map_link }}" target="_blank">View on Map</a></td>
+                    <td>{{ entry.deviation_time }}</td>
+                    <td>{{ entry.deviation_distance }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a href="/">Back to Home</a>
+            <div id="map"></div>
+        </main>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}&libraries=places,directions"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: {lat: 8.5241, lng: 76.9366}  // Center the map around Trivandrum
+            });
+
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.setMap(map);
+
+            var waypoints = [
+                {% for entry in services %}
+                {
+                    location: '{{ entry.service.location }}',
+                    stopover: true
+                },
+                {% endfor %}
+            ];
+
+            var request = {
+               

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Route</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="{{ url_for('static', filename='images/Banner.jpeg') }}" alt="Banner" class="banner">
+            <img src="{{ url_for('static', filename='images/Logo.jpeg') }}" alt="Logo" class="logo">
+        </header>
+        <main class="main">
+            <h1>Explore the World</h1>
+            <form id="routeForm" action="/route" method="POST">
+                <div class="input-group">
+                    <label for="start">Go from</label>
+                    <input type="text" id="start" name="start" placeholder="Enter start location">
+                </div>
+                <div class="input-group">
+                    <label for="destination">to</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination">
+                </div>
+                <div class="input-group">
+                    <label for="service">via a</label>
+                    <input type="text" id="service" name="service" placeholder="Enter service (e.g., KFC)">
+                </div>
+                <button type="submit">Find Route</button>
+            </form>
+            <div id="loading" class="loading">
+                <p>Loading...</p>
+            </div>
+        </main>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}&libraries=places"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
