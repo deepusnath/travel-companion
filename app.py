@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Replace with your Google API Key
-GOOGLE_API_KEY = 'AIzaSyB1NDkaq4KAUa9-FQkr6cMuJSz2Kl048ds'
+GOOGLE_API_KEY = 'TEST'
 
 @app.route('/')
 def index():
