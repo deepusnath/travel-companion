@@ -1,0 +1,207 @@
+{
+  "destination": "Varkala",
+  "service": "restaurant",
+  "services": [
+    {
+      "deviation_distance": 31.221,
+      "deviation_time": 57.38333333333333,
+      "service": {
+        "address": "Near, CSI Mission Hospital Rd, Kazhakuttam, Vadakkumbhagam, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5749427,76.8685709&travelmode=driving",
+        "location": "8.5749427,76.8685709",
+        "name": "Choice Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 32.525,
+      "deviation_time": 58.35,
+      "service": {
+        "address": "near Karthika bar hotel, Kazhakuttam, Vadakkumbhagam, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5720852,76.8706864&travelmode=driving",
+        "location": "8.5720852,76.8706864",
+        "name": "Kothy, the family restaurant"
+      }
+    },
+    {
+      "deviation_distance": 32.525,
+      "deviation_time": 58.35,
+      "service": {
+        "address": "HVCC+R7G, Oorambu Road pazhayauchakkada",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.572061999999999,76.8707034&travelmode=driving",
+        "location": "8.572061999999999,76.8707034",
+        "name": "A.S family Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 32.178,
+      "deviation_time": 58.61666666666667,
+      "service": {
+        "address": "MAHADEVA Restaurant, Kazhakuttom",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.566674299999999,76.87457429999999&travelmode=driving",
+        "location": "8.566674299999999,76.87457429999999",
+        "name": "MAHADEVA RESTAURANT"
+      }
+    },
+    {
+      "deviation_distance": 32.134,
+      "deviation_time": 59.0,
+      "service": {
+        "address": "HV8F+M7M, Market Rd, Kazhakuttam, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5667131,76.8731779&travelmode=driving",
+        "location": "8.5667131,76.8731779",
+        "name": "Hotel Annapoorna"
+      }
+    },
+    {
+      "deviation_distance": 33.796,
+      "deviation_time": 61.31666666666667,
+      "service": {
+        "address": "HV7J+XW4, NH 47, Ambalathinkara, Karyavattom, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.564898,76.8823429&travelmode=driving",
+        "location": "8.564898,76.8823429",
+        "name": "Malabar Mahal Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 33.993,
+      "deviation_time": 61.833333333333336,
+      "service": {
+        "address": "HV8G+367, Service Rd, Technopark Campus, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5651861,76.8755729&travelmode=driving",
+        "location": "8.5651861,76.8755729",
+        "name": "Keralees Kitchen"
+      }
+    },
+    {
+      "deviation_distance": 34.026,
+      "deviation_time": 63.71666666666667,
+      "service": {
+        "address": "Kulathur Rd, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5582282,76.8751692&travelmode=driving",
+        "location": "8.5582282,76.8751692",
+        "name": "Marva's Kitchen"
+      }
+    },
+    {
+      "deviation_distance": 34.249,
+      "deviation_time": 64.21666666666667,
+      "service": {
+        "address": "HV4G+V3Q, Railway Station Rd, Pallinada, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.557208,76.8752243&travelmode=driving",
+        "location": "8.557208,76.8752243",
+        "name": "Vasanta Bhavan Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 34.266,
+      "deviation_time": 64.28333333333333,
+      "service": {
+        "address": "Pallinada, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5571283,76.8752164&travelmode=driving",
+        "location": "8.5571283,76.8752164",
+        "name": "Swami's Vegetarian Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 34.896,
+      "deviation_time": 64.76666666666667,
+      "service": {
+        "address": "Jkbkkbnmbopposite, to, Technopark Rd, opposite Peni Ice Cream, Phase 1, Pallinada, Kazhakkoottam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5558199,76.876201&travelmode=driving",
+        "location": "8.5558199,76.876201",
+        "name": "The Triangle Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 36.091,
+      "deviation_time": 66.2,
+      "service": {
+        "address": "HVM9+V9G, opposite Sainik School, Kazhakkoottam",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5846973,76.86846299999999&travelmode=driving",
+        "location": "8.5846973,76.86846299999999",
+        "name": "Tharavadu Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 38.251,
+      "deviation_time": 68.56666666666666,
+      "service": {
+        "address": "JV3G+4M5, Andoorkonam",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.6027565,76.87674179999999&travelmode=driving",
+        "location": "8.6027565,76.87674179999999",
+        "name": "SHANU RESTAURANT"
+      }
+    },
+    {
+      "deviation_distance": 37.418,
+      "deviation_time": 69.81666666666666,
+      "service": {
+        "address": "GVRM+RG9, Kulathoor, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5420412,76.88386990000001&travelmode=driving",
+        "location": "8.5420412,76.88386990000001",
+        "name": "Lal's Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 39.391,
+      "deviation_time": 71.01666666666667,
+      "service": {
+        "address": "&, Infosys, NH Bypass Between Kunnil, Kulathoor, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5304182,76.8855301&travelmode=driving",
+        "location": "8.5304182,76.8855301",
+        "name": "Zam Zam Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 40.189,
+      "deviation_time": 72.63333333333334,
+      "service": {
+        "address": "NH Bypass Service Rd, Near Infosys, Kulathoor, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.5269128,76.8877813&travelmode=driving",
+        "location": "8.5269128,76.8877813",
+        "name": "Spicebridge | Multi cuisine restaurant at SFS Homebridge, Trivandrum"
+      }
+    },
+    {
+      "deviation_distance": 41.842,
+      "deviation_time": 74.11666666666666,
+      "service": {
+        "address": "HW26+98M, Chavadimukku, Sreekariyam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.550953,76.9108019&travelmode=driving",
+        "location": "8.550953,76.9108019",
+        "name": "Garden Restaurant"
+      }
+    },
+    {
+      "deviation_distance": 41.997,
+      "deviation_time": 74.61666666666666,
+      "service": {
+        "address": "HW26+7CJ, Chavadimukku, Amadi Nagar, Sreekariyam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.550673,76.9110461&travelmode=driving",
+        "location": "8.550673,76.9110461",
+        "name": "Brothers family restaurant"
+      }
+    },
+    {
+      "deviation_distance": 43.193,
+      "deviation_time": 77.7,
+      "service": {
+        "address": "Sreekaryam - Kulathoor Rd, Ambady Nagar, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.547716,76.90654789999999&travelmode=driving",
+        "location": "8.547716,76.90654789999999",
+        "name": "LORDS RESTAURANT"
+      }
+    },
+    {
+      "deviation_distance": 43.578,
+      "deviation_time": 77.91666666666667,
+      "service": {
+        "address": "GWX9+F67, Sreekariyam, Thiruvananthapuram",
+        "google_map_link": "https://www.google.com/maps/dir/?api=1&origin=8.5685708,76.87313329999999&destination=8.7378685,76.71633589999999&waypoints=8.548655499999999,76.91811229999999&travelmode=driving",
+        "location": "8.548655499999999,76.91811229999999",
+        "name": "Amritha RESTAURANT"
+      }
+    }
+  ],
+  "start": "Kazhakkoottam"
+}

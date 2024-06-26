@@ -1,14 +1,14 @@
+from flask import Flask, request, jsonify
+import os
 import requests
-from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Replace with your Google API Key
-GOOGLE_API_KEY = 'TEST'
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
 @app.route('/')
 def index():
-    return render_template('index.html', google_api_key=GOOGLE_API_KEY)
+    return jsonify({"message": "Welcome to the Travel Companion API"})
 
 @app.route('/route', methods=['POST'])
 def route():
@@ -16,23 +16,22 @@ def route():
     destination = request.form['destination']
     service = request.form['service']
     
-    # Convert human-readable addresses to lat/lng coordinates
     start_coords = geocode_address(start)
     destination_coords = geocode_address(destination)
     
     if not start_coords or not destination_coords:
-        return "Invalid start or destination location. Please try again."
+        return jsonify({"error": "Invalid start or destination location. Please try again."}), 400
     
-    # Find nearby services
     nearby_services = find_nearby_services(start_coords, destination_coords, service)
-    
-    # Calculate deviation for each service
     deviations = calculate_deviations(start_coords, destination_coords, nearby_services)
-    
-    # Sort services by deviation
     sorted_services = sorted(deviations, key=lambda x: x['deviation_time'])
     
-    return render_template('route.html', start=start, destination=destination, service=service, services=sorted_services, google_api_key=GOOGLE_API_KEY)
+    return jsonify({
+        "start": start,
+        "destination": destination,
+        "service": service,
+        "services": sorted_services
+    })
 
 def geocode_address(address):
     url = f"https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={GOOGLE_API_KEY}"
@@ -45,7 +44,7 @@ def geocode_address(address):
     return None
 
 def find_nearby_services(origin, destination, service):
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={origin}&radius=5000&type=restaurant&keyword={service}&key={GOOGLE_API_KEY}"
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={origin}&radius=5000&keyword={service}&key={GOOGLE_API_KEY}"
     response = requests.get(url)
     results = response.json().get('results', [])
     
@@ -85,4 +84,4 @@ def calculate_distance_time(origin, destination):
     return {'distance': distance, 'duration': duration}
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)  # Change 5001 to any available port number
+    app.run(debug=True, port=5001)
